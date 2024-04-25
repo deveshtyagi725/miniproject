@@ -1,0 +1,21 @@
+print("Voteing system")
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+if age >= 18:
+    print(f"Congratulations, {name}! You are eligible to vote.")
+    print("Select the party you want to vote for:")
+    print("1. BJP")
+    print("2. SPA")
+    print("3. AAM")
+    party_choice = int(input("Enter the number of the party you want to vote for: "))
+    if party_choice == 1:
+        print(f"Thank you, {name}! You have voted for BJP.")
+    elif party_choice == 2:
+        print(f"Thank you, {name}! You have voted for SPA.")
+    elif party_choice == 3:
+        print(f"Thank you, {name}! You have voted for AAM.")
+    else:
+        print("Invalid party choice!")
+else:
+    print(f"Sorry, {name}. You are not eligible to vote yet.")
+
