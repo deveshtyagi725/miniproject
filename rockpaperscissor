@@ -1,0 +1,21 @@
+import random
+#o = rock , 1 = paper , 2 = scissors
+user_input=int(input("enter the number 0/1/2 ="))
+if user_input >= 3 or user_input<0 :
+    print("you have entered a wrong choice, you lose ")
+else :
+  computer_input=random.randint(0,2)
+  print(computer_input)
+  if computer_input == user_input :
+       print("match tie")
+  elif (computer_input == 0 and user_input == 2):
+    print("you lose")
+  elif (user_input == 0 and computer_input == 2):
+    print("you win")
+  elif computer_input>user_input :
+    print("you lose")
+  elif computer_input<user_input :
+    print("you win")
+
+
+
